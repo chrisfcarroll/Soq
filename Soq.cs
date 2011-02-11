@@ -51,7 +51,7 @@ namespace WarringtonSoftwareLtd
         {
             if (!ConfigurationIsEnabled)
             {
-                throw new InvalidOperationException("The Soq may not bet configured with ConfigurationIsEnabled is false.");
+                throw new InvalidOperationException("The Soq may not be configured when ConfigurationIsEnabled is false.");
             }
             instance = testSoq ?? new Soq();
         }
