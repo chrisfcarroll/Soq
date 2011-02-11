@@ -9,7 +9,7 @@ You can immediately see when not to use it: if you require real runtime configur
 
 
 Example Usage
-//See http://./TestExampleCode.cs for the full code.
+//See http://./blob/master/TestExampleCode.cs for the full code.
 
     public class MyClassThatDependsonSomething  
     {  
