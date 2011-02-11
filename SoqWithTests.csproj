@@ -45,10 +45,12 @@
   <ItemGroup>
     <Compile Include="Soq.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestExampleCode.cs" />
     <Compile Include="TestSoq.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Moq.dll" />
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
