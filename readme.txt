@@ -9,7 +9,7 @@ You can immediately see when not to use it: if you require real runtime configur
 
 
 Example Usage
-//See TestExampleCode.cs for the full code.
+//See http://./TestExampleCode.cs for the full code.
 
     public class MyClassThatDependsonSomething  
     {  
@@ -40,6 +40,6 @@ Example Usage
             var result = myClass.D1;
 
             //Assert  
-            Assert.AreSame<Object>(dummy, result);
+            Assert.AreSame<SomeDependency>(dummy, result);
         }
     }
