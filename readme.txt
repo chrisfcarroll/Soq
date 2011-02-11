@@ -1,5 +1,5 @@
-﻿Soq is intended as an extremely simple solution to the problem of dependencies when unit testing code. As such it competes with dependency injection, service location and the humble object pattern.
-But it is so simple that you could write a complete implementation from scratch in less time that you can download (let alone install and read the quick start guide) a DI framework or service locator.
+Soq is intended as an extremely simple solution to the problem of dependencies when unit testing code. As such it competes with dependency injection, service location and the humble object pattern.
+It's distinctive feature is, that it's so simple that you can write a complete implementation from scratch in less time that you can read the quick start guide to a DI framework.
 
 It implements the object quote pattern as described at http://www.cafe-encounter.net/p157/simple-object-quotation
 
