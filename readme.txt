@@ -5,7 +5,7 @@ It implements the object quote pattern as described at http://www.cafe-encounter
 
 This is a C# implementation. It should take you all of 2 or 3 minutes to rewrite it entirely in your own favourite language. If you do, feel free to post in the comments on the home page at http://www.cafe-encounter.net/p157/simple-object-quotation.
 
-You can immediately see when not to use it: if you require real runtime configurability then object quotation is not your answer.
+You can immediately see when not to use it: if you require real runtime configurability then object quotation is not your answer. It's intended just for testability.
 
 
 Example Usage
