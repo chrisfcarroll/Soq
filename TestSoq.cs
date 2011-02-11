@@ -9,36 +9,16 @@ using Moq;
 namespace WarringtonSoftwareLtd
 {
     [TestFixture]
-    public class When_a_soq_is_configured_for_test
-    {
-        [Test]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void A_used_soq_should_throw_if_ignore_not_set()
-        {
-            Soq.Quote<Object>(new Object());
-            Soq.ConfigureForTest(new Soq(), false);
-        }
-
-        [Test]
-        public void A_used_soq_should_not_throw_if_ignore_is_set()
-        {
-            Soq.Quote<Object>(new Object());
-            Soq.ConfigureForTest(new Soq(), true);
-        }
-    
-    }
-
-    [TestFixture]
     public class When_SoqQuote_is_called
     {
         [Test]
         public void An_unconfigured_Soq_should_return_the_passed_object()
         {
             //A
-            Soq.ConfigureForTest(null, true);
+            Soq.ConfigureForTest(null);
             Object o = new DateTime();
             //A
-            Object result = Soq.Quote<Object>(o);
+            Object result = Soq.Quote(o);
             //A
             Assert.AreSame<Object>(o,result);
         }
@@ -52,10 +32,10 @@ namespace WarringtonSoftwareLtd
 
             var mockSoq = new Mock<Soq>();
             mockSoq.Setup(soq => soq.QuoteImplementation<Object>(o)).Returns(()=>dummy);
-            Soq.ConfigureForTest(mockSoq.Object, true);
+            Soq.ConfigureForTest(mockSoq.Object);
 
             // Act
-            Object result = Soq.Quote<Object>(o);
+            Object result = Soq.Quote(o);
 
             //Assert
             Assert.AreSame<Object>(dummy, result);

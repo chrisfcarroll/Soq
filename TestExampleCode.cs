@@ -31,22 +31,22 @@ namespace WarringtonSoftwareLtd
     public class TestExampleCode
     {
         [Test]
-        public void Test_something_with_dependencies()
+        public void Test_that_a_MoqSoq_returns_a_mock_dependency()
         {
             //Arrange  
-            SomeDependency dummy = new Mock<SomeDependency>().Object;
+            SomeDependency mockDependency = new Mock<SomeDependency>().Object;
 
             var mockSoq = new Mock<Soq>();
             mockSoq.Setup(soq => soq.QuoteImplementation<SomeDependency>(It.IsAny<SomeDependency>()))
-                   .Returns(dummy);
-            Soq.ConfigureForTest(mockSoq.Object, true);
+                   .Returns(mockDependency);
+            Soq.ConfigureForTest(mockSoq.Object);
 
             // Act  
             var myClass = new MyClassThatDependsonSomething();
-            var result = myClass.D1;
+            var quotedDependency = myClass.D1;
 
             //Assert  
-            Assert.AreSame<Object>(dummy, result);
+            Assert.AreSame<Object>(mockDependency, quotedDependency);
         }
     }
 }
