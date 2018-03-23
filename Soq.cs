@@ -13,14 +13,14 @@ namespace WarringtonSoftwareLtd
 
         /// <summary>
         /// Surround or 'Quote' calls that construct or build your dependencies with this method.
-        /// Example usage: D1 = Soq.Quote( new SomeDependency() );  
+        /// Example usage: D1 = Soq.It( new SomeDependency() );  
         /// </summary>
         /// <typeparam name="T">The type of the dependancy interface or class</typeparam>
         /// <param name="instantiatedDependency">The instantiated instance of a T that should be used in the production runtime environment</param>
         /// <returns>In a production environment - that is, when you have not called ConfigureForTest - this method is a simple passthrough and will always return <see cref="dependency"/>
         /// If the Soq has been configured with a MoqSoq, then this method will return the result of calling MoqSoq.QuoteImplementation&lt;T&gt;(dependency)
         /// </returns>
-        public static T Quote<T>(T instantiatedDependency)
+        public static T It<T>(T instantiatedDependency)
         {
             return instance.QuoteImplementation<T>(instantiatedDependency);
         }
