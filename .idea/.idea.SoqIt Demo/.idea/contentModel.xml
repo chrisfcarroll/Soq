@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="B:\Users\Chris\Source\Repos\SoqIt" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.0" t="Include">
+            <e p="SoqIt.AssemblyInfo.cs" t="Include" />
+            <e p="SoqIt.Program.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ReadMe.md" t="Include" />
+      <e p="Soq.cs" t="Include" />
+      <e p="SoqIt Demo.sln" t="IncludeFlat" />
+      <e p="SoqIt.csproj" t="IncludeRecursive" />
+      <e p="SoqItTestsAndExamples.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Chris\.nuget\packages\nunit3testadapter\3.10.0\build\netcoreapp1.0\Mono.Cecil.dll" t="Include" />
+    <e p="C:\Users\Chris\.nuget\packages\nunit3testadapter\3.10.0\build\netcoreapp1.0\nunit.engine.netstandard.dll" t="Include" />
+    <e p="C:\Users\Chris\.nuget\packages\nunit3testadapter\3.10.0\build\netcoreapp1.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\Chris\.nuget\packages\nunit3testadapter\3.10.0\build\netcoreapp1.0\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\Chris\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_SoqIt Demo.1775402168.00" t="ExcludeRecursive" />
+  </component>
+</project>
