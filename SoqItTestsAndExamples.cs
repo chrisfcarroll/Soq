@@ -60,13 +60,6 @@ namespace SoqIt
         }
     }
    
-    public class SomeDependency{}
-
-    public class OtherDependency
-    {
-        public static OtherDependency GetOtherDependency() => new OtherDependency();
-    }
-
     public class MyClassThatDependsonSomething
     {
         public MyClassThatDependsonSomething()
@@ -78,4 +71,11 @@ namespace SoqIt
         internal SomeDependency D1 { get; }
         OtherDependency D2 { get; }
     }    
+
+    public class SomeDependency{}
+
+    public class OtherDependency
+    {
+        public static OtherDependency GetOtherDependency() => new OtherDependency();
+    }
 }
