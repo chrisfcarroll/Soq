@@ -6,7 +6,7 @@ Soqit – Simply Object Quote It – is an extremely simple solution to the prob
 Simple Object Quotation is described at http://www.cafe-encounter.net/p157/object-quotation
 Its distinctive feature is, that it's so simple that you can write a complete implementation from scratch in less time that you can read the quick start intro to a DI container.
 
-This is a C# implementation. There are only 8 lines of significant code so it should take you all of 2 or 3 minutes to rewrite it entirely in your own favourite language. If you do, feel free to post in the comments on the home page at http://www.cafe-encounter.net/p157/object-quotation.
+This is a C# implementation. There are only 8 lines of significant code so it should take you all of 2 or 3 minutes to rewrite it entirely in your own favourite language. Feel free to do a PR.
 
 When not to use object quotation: if you require real runtime configurability then object quotation is not your answer. But if you just want decoupling and testability, then here it is.
 
